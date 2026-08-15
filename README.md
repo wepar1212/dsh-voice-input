@@ -2,6 +2,8 @@
 
 [中文](#中文) | [English](#english)
 
+![dsh-voice-input 中英语音输入按钮 / Chinese and English voice input button](./assets/voice-input-composer.png)
+
 ## 中文
 
 为 DeepSeek Harness Web 输入框添加中英语音输入，支持中文、英文及中英混合口述。基于浏览器 Web Speech API，无服务端、无需 API Key 或本地模型。
