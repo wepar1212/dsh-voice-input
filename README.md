@@ -7,7 +7,7 @@
 在 `deepseek-harness` 源码根目录执行：
 
 ```powershell
-pnpm dsh plugin --profile web add github:wepar1212/dsh-voice-input
+pnpm dsh plugin --profile web add github:wepar1212/dsh-voice-input#v0.1.0
 ```
 
 重启 DSH Web 后，点击输入框左侧的 🎤 开始持续识别；再次点击停止，并将识别结果写入输入框。
