@@ -1,0 +1,56 @@
+.vmicBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--dsw-alias-label-secondary);
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.vmicBtn:hover {
+  background: var(--dsw-alias-interactive-bg-hover);
+  color: var(--dsw-alias-label-primary);
+}
+
+.vmicBtnOn {
+  background: var(--dsw-alias-state-error-primary);
+  color: #fff;
+  animation: vmicPulse 1.2s ease-in-out infinite;
+}
+
+@keyframes vmicPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(229, 72, 77, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(229, 72, 77, 0);
+  }
+}
+
+.vmicPill {
+  position: fixed;
+  left: 50%;
+  bottom: 150px;
+  transform: translateX(-50%);
+  z-index: 70;
+  max-width: min(520px, calc(100vw - 40px));
+  padding: 10px 16px;
+  border: 1px solid var(--dsw-alias-border-l1);
+  border-radius: 12px;
+  background: var(--dsw-alias-bg-overlay);
+  color: var(--dsw-alias-label-primary);
+  font-size: 14px;
+  box-shadow: var(--dsw-shadow-lv2);
+  pointer-events: none;
+}
+
+.vmicErr {
+  color: var(--dsw-alias-state-error-primary);
+}

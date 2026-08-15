@@ -1,0 +1,4 @@
+# Composer voice-input bundle layer: insert this plugin into the host Loader.
+- insert:
+    - id: voice-input
+      name: dsh-voice-input
